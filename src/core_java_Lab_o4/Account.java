@@ -1,18 +1,16 @@
-package corejava.lab4;
+package core_java_Lab_o4;
 
-public class AccountPerson {
+public class Account {
 
-	//public static void main(String[] args) {
-		// TODO Auto-generated method stub
 	private long accNum;
 	private double balance;
-	private AccountPerson accHolder;
+	private Person accHolder;
 	
-	public AccountPerson(String name,float age,long accNum,double balance)
+	public Account(String name,float age,long accNum,double balance)
 	{
 		this.accNum=accNum;
 		this.balance=balance;
-		AccountPerson p = new AccountPerson (name,age, accNum, balance);
+		Person p = new Person(name,age);
 		accHolder = p;
 	}
 	
@@ -48,7 +46,7 @@ public class AccountPerson {
 	
 	
 
-	public void setAccHolder(AccountPerson accHolder) {
+	public void setAccHolder(Person accHolder) {
 		this.accHolder = accHolder;
 	}
 
@@ -63,5 +61,3 @@ public class AccountPerson {
 	}
 
 }
-
-	
